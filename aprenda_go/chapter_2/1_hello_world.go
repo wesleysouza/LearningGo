@@ -6,8 +6,12 @@ import (
 
 //var declaration
 var a = "Golang"
-
+var z int //declaration without value
 //visibility: package (package level scope)
+
+//create types
+type number int // subjacent type int
+var n number = 10
 
 func main() {
 	numBytes, numErr := fmt.Println("Hello world", "in GO") //The function print return write number of bytes and errors
@@ -21,7 +25,7 @@ func main() {
 	// =
 	// assigns value in variable exist
 
-	//primitive types
+	//primitive types -> static
 	b := 16        // numbers
 	c := "strings" // strings
 	d := true      //boolean
@@ -37,6 +41,21 @@ func main() {
 	fmt.Println(f)
 
 	test(10)
+
+	fmt.Println(z)
+
+	//Strings (interpreted string literals vs. raw string literals)
+
+	str1 := "Bom dia\n Tudo bem?"
+	str2 := `Bom dia\n Tudo bem?`
+
+	fmt.Println(str1)
+	fmt.Println(str2)
+
+	//convertion of types
+	//using type number
+	numberInt := int(n)
+	fmt.Println(numberInt)
 }
 
 func test(x int) {
