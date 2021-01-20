@@ -4,4 +4,5 @@
 
 References:
 * Donovan, A. A., & Kernighan, B. W. (2015). The Go programming language. Addison-Wesley Professional;
-* Youtube channel Aprenda Go by @ellenkorbes.
+* Youtube channel Aprenda Go by @ellenkorbes;
+* Golang Documentation avaliable in https://golang.org/doc/.
